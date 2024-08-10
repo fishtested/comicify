@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Comicify",
+  "version": "1",
+  "description": "A Firefox extension to change all text fonts to Comic Sans MS if installed.",
+
+  "icons": {
+    "48": "Comicify.png"
+  },
+
+  "permissions": [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["comicify.js"]
+    }
+  ]
+}
