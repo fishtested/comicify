@@ -1,1 +1,3 @@
-document.body.style.fontFamily = "Comic Sans MS, sans-serif";
+document.querySelectorAll('*').forEach(element => {
+    element.style.fontFamily = "Comic Sans MS, sans-serif";
+});
